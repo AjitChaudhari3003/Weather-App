@@ -1,0 +1,52 @@
+.InfoBox {
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+}
+
+.cardcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card Styling */
+.MuiCard-root {
+  border-radius: 15px !important;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.2) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.MuiCard-root:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.3) !important;
+}
+
+/* Card Media (image) */
+.MuiCardMedia-root {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+/* Typography inside Card */
+.MuiTypography-h5 {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* space between city name & icon */
+  color: #333;
+}
+
+.MuiTypography-body2 {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .MuiCard-root {
+    max-width: 90% !important;
+  }
+}

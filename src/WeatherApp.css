@@ -1,0 +1,38 @@
+/* Outer container */
+.weather-app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #89f7fe, #66a6ff);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card wrapper for Search + Info */
+.weather-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0px 6px 18px rgba(0,0,0,0.2);
+  padding: 25px;
+  max-width: 450px;
+  width: 90%;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.weather-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
+}
+
+/* Title */
+.weather-card h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+/* Space between child components */
+.weather-card > *:not(:first-child) {
+  margin-top: 20px;
+}
